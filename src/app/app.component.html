@@ -1,0 +1,49 @@
+<div class="container">
+  <p>App Component</p>
+  <p> {{ myName }} </p>
+  <p> {{ fun() }} </p>
+  <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="createServer()">Create Server</button>
+  <p></p>
+  <p> {{ allowNewServer }} </p>
+  <p> {{ serverStatus }} </p>
+
+  <p>Server name is {{serverName}} </p>
+  <input type="text" (input)="getServerName($event)">
+  <p>Enter details - </p>
+  <input type="text" [(ngModel)]="serverName">
+
+</div>
+
+<!-- <app-header></app-header>
+<div class="bg-light"
+  style="background-image: url('https://www.contentgrip.com/content/images/wordpress/2021/03/capgemini-FI-1.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+  <div class="container" style="height: 100vh; text-shadow: 2px 2px white;">
+    <h1 class="display-3 text-primary pt-5">CG SFDC Angular App</h1>
+    <p class="text-primary">This is a demo Angular app for CG trainees SFDC 25 Jan 2022 batch 2.</p>
+  </div>
+</div>
+<app-footer></app-footer> -->
+<!-- <div class="container">
+  <p>App Component</p>
+  <p> {{ myName }} </p>
+  <p> {{ fun() }} </p>
+  <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="createServer()">Create Server</button>
+  <p></p>
+  <p> {{ allowNewServer }} </p>
+  <p> {{ serverStatus }} </p>
+
+  <p>Server name is {{serverName}} </p>
+  <input type="text" (input)="getServerName($event)" >
+
+</div>
+
+<-- <app-header></app-header> -->
+<!-- <div class="bg-light"
+  style="background-image: url('https://www.contentgrip.com/content/images/wordpress/2021/03/capgemini-FI-1.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+  <div class="container" style="height: 100vh; text-shadow: 2px 2px white;">
+    <h1 class="display-3 text-primary pt-5">CG SFDC Angular App</h1>
+    <p class="text-primary">This is a demo Angular app for CG trainees SFDC 25 Jan 2022 batch 2.</p>
+  </div>
+</div>
+<app-footer></app-footer> --> 
+<!-- <app-employee></app-employee> -->

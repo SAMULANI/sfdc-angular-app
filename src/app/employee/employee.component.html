@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <form>
+        <div class="login ">
+            <legend style="text-align: center; color: rgb(142, 142, 224);">Login Form</legend>
+            <input class="form-control" ngModel required name="Name" type="Name" (input)="getUserName($event)" #uuid="ngModel" (blur)="onBlur(uid)" placeholder="{{labelName}}">
+            <div class="alert alert-danger" *ngIf="uuid.touched && uuid.errors?.['required']">
+                Username Required
+            </div>
+
+
+
+
+            <input class="form-control" ngModel required name="Password" type="Password" (input)="getPassword($event)" #uid="ngModel" (blur)="onBlur(uid)" placeholder="{{labelName2}} ">
+            <div class="alert alert-danger" *ngIf="uid.touched && uid.errors?.['required']">
+                Password Required
+            </div>
+
+
+            <button class="form-control " type="login" onclick="login()">Login</button>
+        </div>
+    </form>
+</div>

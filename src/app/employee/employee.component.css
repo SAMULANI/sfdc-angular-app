@@ -1,0 +1,9 @@
+.login {
+    margin: 100px 00px 100px 600px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-control {
+    margin-bottom: 3px;
+}
